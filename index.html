@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Raid Sentinel | Screen OCR Alerts for Raid Logs</title>
+    <meta
+      name="description"
+      content="Raid Sentinel is a Windows desktop OCR tool that monitors a selected screen region and sends raid/log keyword alerts to Discord without memory injection or game modification."
+    >
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Raid Sentinel home">
+        <span class="brand-mark">RS</span>
+        <span>Raid Sentinel</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#how">How it works</a>
+        <a href="#demo">Demo</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#safety">Safety</a>
+      </nav>
+      <a class="nav-cta" href="#pricing">View plans</a>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <h1>Raid Sentinel</h1>
+          <p class="hero-lede">Screen OCR alerts for raid and game log messages.</p>
+          <p class="hero-text">
+            Monitor a selected region of your Windows screen, read log text locally with OCR,
+            and send matching raid alerts to the Discord channel you choose.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#pricing">See pricing</a>
+            <a class="button secondary" href="#demo">Watch demo</a>
+          </div>
+          <ul class="trust-list" aria-label="Product highlights">
+            <li>Local OCR processing</li>
+            <li>Discord webhook alerts</li>
+            <li>No memory injection or game modification</li>
+          </ul>
+        </div>
+
+        <div class="app-preview" aria-label="Raid Sentinel app preview">
+          <div class="window-bar">
+            <span>Raid Sentinel</span>
+            <span class="window-controls">-  □  ×</span>
+          </div>
+          <div class="preview-grid">
+            <aside class="preview-panel">
+              <div class="status-card">
+                <span class="pulse"></span>
+                <div>
+                  <strong>Monitoring active</strong>
+                  <span>Next capture in 2.0s</span>
+                </div>
+              </div>
+              <div class="preview-field">
+                <span>Region</span>
+                <strong>Custom screen area</strong>
+                <small>X: 1260 · Y: 320 · W: 860 · H: 420</small>
+              </div>
+              <div class="preview-field">
+                <span>Discord webhook</span>
+                <strong>Connected</strong>
+                <small>Alerts post to your selected channel</small>
+              </div>
+            </aside>
+
+            <section class="preview-main">
+              <div class="keyword-row" aria-label="Configured alert keywords">
+                <span>destroyed</span>
+                <span>demolished</span>
+                <span>killed</span>
+                <span>raided</span>
+                <span>claimed</span>
+              </div>
+              <div class="alert-list">
+                <div class="alert-row">
+                  <span class="dot"></span>
+                  <strong>Enemy base wall destroyed by [ZOG] Alpha</strong>
+                  <time>1:27:43 PM</time>
+                </div>
+                <div class="alert-row">
+                  <span class="dot"></span>
+                  <strong>Supply depot raided by [TRM] Titan</strong>
+                  <time>1:27:37 PM</time>
+                </div>
+                <div class="alert-row">
+                  <span class="dot"></span>
+                  <strong>Outpost claimed by [ZOG] Alpha</strong>
+                  <time>1:27:21 PM</time>
+                </div>
+                <div class="alert-row">
+                  <span class="dot"></span>
+                  <strong>Player killed near perimeter</strong>
+                  <time>1:26:41 PM</time>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section how-section">
+        <div class="section-heading">
+          <h2>How it works</h2>
+          <p>Raid Sentinel is built for clear setup and transparent fulfillment.</p>
+        </div>
+        <div class="step-grid">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Select a screen region</h3>
+            <p>Choose the area of your game window that contains raid, combat, or server log text.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>Run local OCR</h3>
+            <p>The app captures screenshots on a set interval and reads visible text on your PC.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Send Discord alerts</h3>
+            <p>Matching lines are posted to your configured Discord webhook with duplicate suppression.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo" class="section demo-section">
+        <div class="demo-copy">
+          <h2>Product demo</h2>
+          <p>
+            The demo shows selecting a log region, running OCR, detecting keywords such as
+            destroyed and raided, and receiving the resulting Discord alert.
+          </p>
+          <a class="button secondary" href="#pricing">Review pricing</a>
+        </div>
+        <div class="demo-card">
+          <div class="play-button" aria-hidden="true"></div>
+          <div>
+            <strong>60-second demo video</strong>
+            <span>Region selection · OCR capture · Discord alert</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing-section">
+        <div class="section-heading">
+          <h2>Pricing plans</h2>
+          <p>Monthly subscriptions with a 7-day trial. License keys are delivered after checkout.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Scout</h3>
+            <p class="price">$9<span>/mo</span></p>
+            <p>For solo players and small groups.</p>
+            <ul>
+              <li>Core OCR monitor</li>
+              <li>Configurable keywords</li>
+              <li>One Discord webhook destination</li>
+            </ul>
+          </article>
+          <article class="price-card featured">
+            <h3>Pro</h3>
+            <p class="price">$19<span>/mo</span></p>
+            <p>Recommended for active teams and server owners.</p>
+            <ul>
+              <li>Everything in Scout</li>
+              <li>Priority feature updates</li>
+              <li>Multi-profile configuration roadmap</li>
+            </ul>
+          </article>
+          <article class="price-card">
+            <h3>Server Ops</h3>
+            <p class="price">$39<span>/mo</span></p>
+            <p>For admin teams and larger communities.</p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Priority setup support</li>
+              <li>Multi-channel routing roadmap</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="safety" class="section safety-section">
+        <div>
+          <h2>Screen capture only</h2>
+          <p>
+            Raid Sentinel only reads pixels from the selected screen region. It does not inject
+            into games, modify game files, inspect game memory, bypass anti-cheat systems, or
+            automate gameplay.
+          </p>
+        </div>
+        <div>
+          <h2>Support and refunds</h2>
+          <p>
+            Support covers installation, license activation, webhook setup, and OCR configuration.
+            Subscriptions include a 7-day trial, with refund review available for supported Windows
+            systems that cannot be made to run after troubleshooting.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Raid Sentinel</span>
+      <span>Windows desktop OCR alerts for Discord.</span>
+    </footer>
+  </body>
+</html>

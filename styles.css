@@ -462,8 +462,32 @@ h3 {
 .price-card ul {
   display: grid;
   gap: 10px;
-  margin: 24px 0 0;
+  margin: 24px 0;
   padding-left: 20px;
+}
+
+.price-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 780;
+  text-decoration: none;
+}
+
+.price-action.primary {
+  color: #07110d;
+  background: var(--accent);
+}
+
+.price-action.secondary {
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--line);
 }
 
 .safety-section {

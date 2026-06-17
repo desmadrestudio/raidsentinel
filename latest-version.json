@@ -1,5 +1,6 @@
 {
-  "latest_version": "0.1.8",
+  "latest_version": "0.1.9",
   "download_url": "https://desmadrestudio.github.io/raidsentinel/",
+  "direct_download_url": "",
   "message": "A newer Raid Sentinel version is available. Download the latest build to get fixes and improvements."
 }
